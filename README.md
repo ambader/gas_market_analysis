@@ -98,4 +98,4 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 -flares
 
--conflict indicator
+-[Global Conflict Risk Index (GCRI)](https://op.europa.eu/de/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) combined with countries production
