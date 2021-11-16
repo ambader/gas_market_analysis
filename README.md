@@ -96,7 +96,7 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 - shipping rates
 
-- (Satellite) observing [gas flares](https://www.worldbank.org/en/topic/extractiveindustries/publication/global-gas-flaring-tracker-report) to indicate short-term production/ rig productivity
+- (Satellite) observing [gas flares](https://www.ggfrdata.org/) to indicate short-term production/ rig productivity
 
 - [Automatic Identification System (AIS)](https://www.marinetraffic.com) to track tanker movement
 
