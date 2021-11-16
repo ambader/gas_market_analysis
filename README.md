@@ -79,7 +79,7 @@ plt.show()
 
 ### Conclusion
 The extention and shrinkage of reserves follows a stable and seasonal cycle as the demand for gas rises in colder month. Yet, the correlation is small. The conlusion is:
-- the market usually **anticipates** the supply side effect of reserves
+- the market usually **anticipates** the supply or demand side effect of reserves
 - therefore, reserves can only influence prices if its change **deviates from expectations**
 
 ## Time Series Prediction
