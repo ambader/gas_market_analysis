@@ -5,7 +5,6 @@ Various attempts to predict the price of natural gas
 ###Intro
 ###Data
 ###Plot
-
 <details>
 <summary>PLT Code</summary>
 
@@ -24,8 +23,9 @@ fig.text(0.5, -0.05, "Pearson correlation "+str(np.round(np.corrcoef(tt.y,tt.res
 plt.tight_layout()
 plt.savefig("price_res_corr.png",bbox_inches='tight',dpi=250)
 plt.show()
-  ```
-
+```
 </details>
-![](https://github.com/ambader/gas_market_analysis/blob/main/img/price_res_corr.png?raw=true)
+
+![](https://github.com/ambader/gas_market_analysis/blob/main/img/price_res_corr.png)
+
 ###Conclusion
