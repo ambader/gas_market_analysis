@@ -4,7 +4,7 @@ Various attempts to predict the price of natural gas
 ## Table of Contents
 1. [Reserves](#Reserves)
 2. [Time Series Prediction](#Time-Series-Prediction)
-3. [Further Ideas](#Further-Ideas)
+3. [Further Methods](#Further-Methods)
 
 ## Reserves
 
@@ -92,7 +92,7 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 ### Conclusion
 
-## Further Ideas
+## Further Methods
 
 - shipping rates
 
