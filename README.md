@@ -12,9 +12,9 @@ Various attempts to predict the price of natural gas
 The theses is that changes in natural gas reserves influence the market price.
 
 ### Data
--Reserves data from the [U.S. Energy Information Administration](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwip-7rl7Zz0AhUURuUKHUaYDmoQFnoECA4QAQ&url=https%3A%2F%2Fir.eia.gov%2Fngs%2Fngshistory.xls&usg=AOvVaw1K7aXs_TSzq-ovhYuVd8D4): file [ngshistory.xls](https://github.com/ambader/gas_market_analysis/blob/main/data/ngshistory.xls)
+- Reserves data from the [U.S. Energy Information Administration](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwip-7rl7Zz0AhUURuUKHUaYDmoQFnoECA4QAQ&url=https%3A%2F%2Fir.eia.gov%2Fngs%2Fngshistory.xls&usg=AOvVaw1K7aXs_TSzq-ovhYuVd8D4): file [ngshistory.xls](https://github.com/ambader/gas_market_analysis/blob/main/data/ngshistory.xls)
 
--Market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
+- Market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
 
 <details>
 <summary>Data Prep Code</summary>
@@ -94,8 +94,8 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 ## Further Ideas
 
--shipping rates
+- shipping rates
 
 - (Satellite) observing [gas flares](https://www.worldbank.org/en/topic/extractiveindustries/publication/global-gas-flaring-tracker-report) to indicate short term production/ rig productivity
 
--[Global Conflict Risk Index (GCRI)](https://op.europa.eu/de/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) combined with countries production
+- [Global Conflict Risk Index (GCRI)](https://op.europa.eu/de/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) combined with countries production
