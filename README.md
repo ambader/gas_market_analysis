@@ -1,6 +1,10 @@
 # gas_market_analysis
 Various attempts to predict the price of natural gas
 
+## Table of Contents
+1. [Reserves](#Reserves)
+2. [Time Series Prediction](#Time Series Prediction)
+
 ## Reserves
 
 ### Intro
@@ -76,3 +80,5 @@ plt.show()
 The extention and shrinkage of reserves follows a stable and seasonal cycle as the demand for gas rises in colder month. Yet, the correlation is small. The conlusion is:
 - the market usually **anticipates** the supply side effect of reserves
 - therefore, reserves can only influence prices if its change **deviates from expectations**
+
+## Time Series Prediction
