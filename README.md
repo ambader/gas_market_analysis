@@ -3,8 +3,8 @@ Various attempts to predict the price of natural gas
 
 ## Table of Contents
 1. [Reserves](#Reserves)
-2. [Time Series Prediction](#Time)
-3. [Further Ideas](#Further)
+2. [Time Series Prediction](#Time-Series-Prediction)
+3. [Further Ideas](#Further-Ideas)
 
 ## Reserves
 
