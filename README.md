@@ -96,6 +96,6 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 -shipping rates
 
--flares
+- (Satellite) observing [gas flares](https://www.worldbank.org/en/topic/extractiveindustries/publication/global-gas-flaring-tracker-report) to indicate short term production/ rig productivity
 
 -[Global Conflict Risk Index (GCRI)](https://op.europa.eu/de/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) combined with countries production
