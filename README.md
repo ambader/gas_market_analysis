@@ -3,7 +3,8 @@ Various attempts to predict the price of natural gas
 
 ## Table of Contents
 1. [Reserves](#Reserves)
-2. [Time Series Prediction](#Time Series Prediction)
+2. [Time Series Prediction](#Time)
+3. [Further Ideas](#Further)
 
 ## Reserves
 
@@ -82,3 +83,17 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 - therefore, reserves can only influence prices if its change **deviates from expectations**
 
 ## Time Series Prediction
+
+### Intro
+
+### Data
+
+### Plot
+
+### Conclusion
+
+## Further Ideas
+
+-shipping rates
+-flares
+-conflict indicator
