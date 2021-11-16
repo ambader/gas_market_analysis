@@ -95,5 +95,7 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 ## Further Ideas
 
 -shipping rates
+
 -flares
+
 -conflict indicator
