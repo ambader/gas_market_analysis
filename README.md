@@ -91,6 +91,48 @@ The theses is that market prices represent contain aggregated expectations and t
 - again the market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
 
 ### Plot
+<details>
+<summary>PLT Code</summary>
+
+```python
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from fbprophet import Prophet
+ ```
+ ```python
+ p_pred = pd.read_csv("N_2001-01-01_2021-11-11.csv")
+p_pred = p_pred.rename(columns={"Date" : "ds","Adj Close" : "y"})
+p_pred = p_pred[["ds","y"]]
+p_pred.ds = pd.to_datetime(p_pred.ds)
+
+m = Prophet(yearly_seasonality=True,daily_seasonality=False)
+m.fit(p_pred[-1000:])
+future = m.make_future_dataframe(periods=100)
+future = future[[s.weekday()<5 for s in pd.to_datetime(future.ds)]].reset_index(drop=True)
+forecast = m.predict(future)
+
+forecast.ds = pd.to_datetime(forecast.ds)
+forecast = forecast.set_index("ds")
+p_pred = p_pred.set_index("ds")
+ ```
+ ```python
+sns.set_theme(style="darkgrid")
+plt.rcParams['font.sans-serif'] = 'Liberation Mono'
+
+fig, ax = plt.subplots(figsize=(21,9))
+ax.plot(p_pred[p_pred.index.isin(forecast.index)].y, marker='o', markersize=2,color="#000099",linewidth=4)
+ax.plot(forecast.yhat, color="#ff9900")
+ax.fill_between(forecast.index,forecast.yhat_upper,forecast.yhat_lower, alpha=0.2, color="#ff9900",linewidth=4)
+plt.ylabel("$/MMBtu")
+plt.title("Gas_price-Time_series-Prediction", size=40,color='#3b3b3b',pad=25)
+plt.legend( loc='lower left', labels=['Market Observation', 'Prediction','Trend Uncertainty/Noise'])
+plt.savefig("ts_pred_1.png",bbox_inches='tight',dpi=250)
+ ```
+ </details>
+
+![](https://github.com/ambader/gas_market_analysis/blob/main/img/ts_pred_1.png?raw=true)
 
 ### Conclusion
 Markets trade expectations, so market prices represent the aggregated expectations. These are a sufficient indicator for cyclical effects as boom-bust in exploration. But (sudden) supply- and demand-side incidence actuate both shifts in expectations and prices. Therefore, it is necessary to find meta indices (see [Further Methods](#Further-Methods)).
