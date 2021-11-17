@@ -94,10 +94,10 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 
 ## Further Methods
 
-- shipping rates
+- Use [shipping rates / spot freight markets](https://www.balticexchange.com/en/data-services/market-information0/tankers-services.html) to indicate (short-term) local supply
 
-- (Satellite) observing [gas flares](https://www.ggfrdata.org/) to indicate short-term production/ rig productivity
+- (Satellite) observing [gas flares](https://www.ggfrdata.org/) to indicate (short-term) production/ rig activity
 
 - [Automatic Identification System (AIS)](https://www.marinetraffic.com) to track tanker movement
 
-- [Global Conflict Risk Index (GCRI)](https://op.europa.eu/en/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) for producer countries to indicate medium-term production
+- [Global Conflict Risk Index (GCRI)](https://op.europa.eu/en/publication-detail/-/publication/1c121597-07cc-11e8-b8f5-01aa75ed71a1/language-en) for producer countries to indicate (medium-term) production
