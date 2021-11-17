@@ -85,12 +85,14 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 ## Time Series Prediction
 
 ### Intro
+The theses is that market prices represent contain aggregated expectations and therefore contain all informations to predict itself.
 
 ### Data
 
 ### Plot
 
 ### Conclusion
+Markets trade expectations, so market prices represent the aggregated expectations. These are a sufficient indicator for cyclical effects as boom-bust in exploration. But (sudden) supply- and demand-side incidence actuate both shifts in expectations and prices. Therefore, it is necessary to find meta indices(see [Further Methods](#Further-Methods)).
 
 ## Further Methods
 
