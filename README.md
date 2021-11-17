@@ -85,14 +85,15 @@ The extention and shrinkage of reserves follows a stable and seasonal cycle as t
 ## Time Series Prediction
 
 ### Intro
-The theses is that market prices represent contain aggregated expectations and therefore contain all informations to predict itself.
+The theses is that market prices represent contain aggregated expectations and therefore contain all informations to predict itself. Thus, i'll use the [fbprophet](https://facebook.github.io/prophet/) to project the market price time series into future.
 
 ### Data
+- again the market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
 
 ### Plot
 
 ### Conclusion
-Markets trade expectations, so market prices represent the aggregated expectations. These are a sufficient indicator for cyclical effects as boom-bust in exploration. But (sudden) supply- and demand-side incidence actuate both shifts in expectations and prices. Therefore, it is necessary to find meta indices(see [Further Methods](#Further-Methods)).
+Markets trade expectations, so market prices represent the aggregated expectations. These are a sufficient indicator for cyclical effects as boom-bust in exploration. But (sudden) supply- and demand-side incidence actuate both shifts in expectations and prices. Therefore, it is necessary to find meta indices (see [Further Methods](#Further-Methods)).
 
 ## Further Methods
 
