@@ -137,7 +137,7 @@ plt.savefig("ts_pred_1.png",bbox_inches='tight',dpi=250)
 ### Analysis
 Looks good ? It may does...
   
-# Coming Soon
+# ...Coming Soon...
   
 ### Conclusion
 Markets trade expectations, so market prices represent the aggregated expectations. These are a sufficient indicator for cyclical effects as boom-bust in exploration. But (sudden) supply- and demand-side incidence actuate both shifts in expectations and prices. Therefore, it is necessary to find meta indices (see [Further Methods](#Further-Methods)).
