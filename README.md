@@ -134,7 +134,7 @@ plt.savefig("ts_pred_1.png",bbox_inches='tight',dpi=250)
 
 ![](https://github.com/ambader/gas_market_analysis/blob/main/img/ts_pred_1.png?raw=true)
 
- ###Cross Validation
+ ### Cross Validation
   
  <details>
 <summary>compute cross_val</summary>
