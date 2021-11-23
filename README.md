@@ -134,6 +134,73 @@ plt.savefig("ts_pred_1.png",bbox_inches='tight',dpi=250)
 
 ![](https://github.com/ambader/gas_market_analysis/blob/main/img/ts_pred_1.png?raw=true)
 
+ ###Cross Validation
+  
+ <details>
+<summary>compute cross_val</summary>
+
+```python
+from fbprophet.diagnostics import cross_validation
+df_cv = cross_validation(m, initial='366 days', period='365 days', horizon = '180 days')
+```
+ 
+```python
+from fbprophet.diagnostics import performance_metrics
+df_p = performance_metrics(df_cv)
+```
+   
+ 
+```python
+co_tr = []
+
+df_cv = df_cv.set_index("ds")
+
+for i in p_pred.index:
+    if i in df_cv.index:
+        co_tr.append(8)
+    else:
+        co_tr.append(np.nan)
+   
+tt = p_pred
+tt["co"]=co_tr
+   
+tt["yhat_lower"] = df_cv.yhat_lower
+tt["yhat_upper"] = df_cv.yhat_upper
+tt["yhat"] = df_cv.yhat
+   
+tt = tt[tt.index.isin(pd.date_range(pd.to_datetime("2012"),pd.to_datetime("2021")))]
+   
+df_p.index = np.arange(162)+19
+cross_val_par = "mean squared error","root mean squared error","mean absolute error","mean absolute percentage error","median absolute percentage error","coverage of the upper and lower intervals"
+```
+   
+</details>
+  
+ <details>
+<summary>plot cross_val</summary>
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set_theme(style="darkgrid")
+plt.rcParams['font.sans-serif'] = 'Liberation Mono'
+
+fig, ax = plt.subplots(figsize=(21,9),nrows=2, ncols=1)
+ax[0].plot(tt.y, marker='o', markersize=2,color="#000099")
+ax[0].plot(tt.yhat, color="#ff9900")
+ax[0].bar(tt.index,tt.co, color="crimson", alpha=0.1,width=4.1)
+ax[0].fill_between(tt.index,tt.yhat_upper,tt.yhat_lower, alpha=0.4, color="#ff9900")
+ax[1].plot(df_p.index,df_p[df_p.columns[1:]])
+ax[0].set_ylabel("$/MMBtu")
+ax[1].set_xlabel("forwarded Days")
+ax[0].set_title("Gas_price-Time_series-Cross_Validation", size=40,color='#3b3b3b',pad=25)
+ax[0].legend( loc='upper right', labels=['Market Observation', 'Prediction','Trend Uncertainty/Noise'])
+ax[1].legend( loc='upper left',labels=cross_val_par)
+```
+</details>
+  
+ ![](https://github.com/ambader/gas_market_analysis/blob/main/img/price_cross_val.png?raw=true)
+  
 ### Analysis
 Looks good ? It may does...
   
