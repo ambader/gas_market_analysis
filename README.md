@@ -206,9 +206,9 @@ ax[1].legend( loc='upper left',labels=cross_val_par)
   
 - again the market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
   
-- One large gas producer - (Gazprom)[https://en.wikipedia.org/wiki/Gazprom] (market cap ~115bn$): file [O_2000-01-01_2021-11-14.csv](https://raw.githubusercontent.com/ambader/gas_market_analysis/main/data/O_2000-01-01_2021-11-14.csv)
+- One large gas producer - [Gazprom](https://en.wikipedia.org/wiki/Gazprom) (market cap ~115bn$): file [O_2000-01-01_2021-11-14.csv](https://raw.githubusercontent.com/ambader/gas_market_analysis/main/data/O_2000-01-01_2021-11-14.csv)
   
-- One large service provider - (Schlumberger)[https://en.wikipedia.org/wiki/Schlumberger] (market cap ~40bn$): file [SLB_2001-11-15_2021-11-14.csv](https://raw.githubusercontent.com/ambader/gas_market_analysis/main/data/SLB_2001-11-15_2021-11-14.csv)
+- One large service provider - [Schlumberger](https://en.wikipedia.org/wiki/Schlumberger) (market cap ~40bn$): file [SLB_2001-11-15_2021-11-14.csv](https://raw.githubusercontent.com/ambader/gas_market_analysis/main/data/SLB_2001-11-15_2021-11-14.csv)
   
 ### Analysis
 Looks good ? It may does...
