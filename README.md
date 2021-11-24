@@ -202,6 +202,16 @@ ax[1].legend( loc='upper left',labels=cross_val_par)
  ![](https://github.com/ambader/gas_market_analysis/blob/main/img/price_cross_val.png?raw=true)
  
 ### Multiple Regressors
+  
+#### Intro
+  
+Using market data of gas business companies to refine the gas price prediction. The idea is that their action influence the gas market, e.g. if revenues of exploration providers shrink, it is likely that supply will decrease in the long-term. This procedure has one argumentative weakness: * * why should the market generate different expectations ? * * And continuative, if different data contains different expectations, one should rather try to identify the better one than combining them.
+Besides the immanent friction of markets, I have two arguments which may contradict this objection:
+
+- stock markets are stronger psychological driven than commodity markets, which are rather influenced due to inelastic physical trade.
+  
+- thus stock market data incorporates a larger time horizont and its capital allocation determines the upcoming market situation.
+  
 #### Data
   
 - again the market data from [yahoo! finance](https://de.finance.yahoo.com/quote/NG%3DF/history?p=NG%3DF): file [N_2001-01-01_2021-11-11.csv](https://github.com/ambader/gas_market_analysis/blob/main/data/N_2001-01-01_2021-11-11.csv)
