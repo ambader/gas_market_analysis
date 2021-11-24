@@ -205,7 +205,7 @@ ax[1].legend( loc='upper left',labels=cross_val_par)
   
 #### Intro
   
-Using market data of gas business companies to refine the gas price prediction. The idea is that their action influence the gas market, e.g. if revenues of exploration providers shrink, it is likely that supply will decrease in the long-term. This procedure has one argumentative weakness: * *why should the market generate different expectations ?* * And continuative, if different data contains different expectations, one should rather try to identify the better one than combining them.
+Using market data of gas business companies to refine the gas price prediction. The idea is that their action influence the gas market, e.g. if revenues of exploration providers shrink, it is likely that supply will decrease in the long-term. This procedure has one argumentative weakness: *why should the market generate different expectations ?*. And continuative, if different data contains different expectations, one should rather try to identify the better one than combining them.
 Besides the immanent friction of markets, I have two arguments which may contradict this objection:
 
 - stock markets are stronger psychological driven than commodity markets, those are rather influenced due to inelastic physical trade.
